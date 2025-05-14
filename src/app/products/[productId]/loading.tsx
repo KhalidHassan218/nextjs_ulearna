@@ -14,15 +14,11 @@ export default function ProductLoadingSkeleton() {
           </div>
         </div>
 
-        {/* Product Info Skeleton */}
         <div className="md:w-1/2 space-y-6">
-          {/* Title */}
           <div className="h-8 bg-gray-200 rounded w-3/4"></div>
 
-          {/* Price */}
           <div className="h-6 bg-gray-200 rounded w-1/4"></div>
 
-          {/* Color Selector */}
           <div className="space-y-2">
             <div className="h-4 bg-gray-200 rounded w-16"></div>
             <div className="flex gap-2">
@@ -32,7 +28,6 @@ export default function ProductLoadingSkeleton() {
             </div>
           </div>
 
-          {/* Size Selector */}
           <div className="space-y-2">
             <div className="h-4 bg-gray-200 rounded w-16"></div>
             <div className="flex gap-2">
@@ -42,7 +37,6 @@ export default function ProductLoadingSkeleton() {
             </div>
           </div>
 
-          {/* Quantity Selector */}
           <div className="space-y-2">
             <div className="h-4 bg-gray-200 rounded w-20"></div>
             <div className="flex items-center gap-4">
@@ -52,13 +46,10 @@ export default function ProductLoadingSkeleton() {
             </div>
           </div>
 
-          {/* Add to Cart Button */}
           <div className="bg-gray-200 rounded-md h-12 w-full"></div>
 
-          {/* Divider */}
           <div className="border-t border-gray-200 pt-6"></div>
 
-          {/* Description */}
           <div className="space-y-2">
             <div className="h-4 bg-gray-200 rounded w-24"></div>
             <div className="h-3 bg-gray-200 rounded w-full"></div>

@@ -74,7 +74,6 @@ export default function CartItem({ item }: Readonly<Props>) {
             onQuantityInputChange={(e) =>
               updateQuantity(parseInt(e.target.value))
             }
-            className="h-8"
           />
           <button
             onClick={removeItem}
