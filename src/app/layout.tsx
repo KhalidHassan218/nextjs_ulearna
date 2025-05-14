@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import { CartProvider } from "./context/CartContext";
+import Cart from "./components/Cart";
+import { ErrorWrapper } from "./error-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +31,25 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <CartProvider>
+          <header className="relative">
+            <Navbar />
+            <Cart />
+          </header>
+
+          <div>
+            <ErrorWrapper>{children}</ErrorWrapper>
+          </div>
+
+          <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+            <span className="flex items-center gap-2 hover:underline hover:underline-offset-4">
+              Ulearna - Nextjs 15 - frontend position test
+            </span>
+            <span className="flex items-center gap-2 hover:underline hover:underline-offset-4">
+              Made by Khalid Walid Osman - 13/05/2025 copyright &copy; reserved
+            </span>
+          </footer>
+        </CartProvider>
       </body>
     </html>
   );
