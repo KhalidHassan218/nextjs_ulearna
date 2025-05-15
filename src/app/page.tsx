@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-red-600">
+    <main>
       {/* Hero Section */}
       <div className="relative h-screen max-h-[800px] overflow-hidden">
         <Image
