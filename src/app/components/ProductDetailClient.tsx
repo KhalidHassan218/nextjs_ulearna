@@ -42,7 +42,7 @@ export default function ProductDetailClient({
           <div className="fixed  flex justify-center items-center z-[1000] w-full h-full bg-[#000000d2] top-0 left-0">
             <button
               onClick={toggleImageSlider}
-              className="bg-white absolute top-[10%] left-[10%] w-4 h-4 p-3 cursor-pointer flex justify-center items-center  rounded-full text-black"
+              className="bg-white dark:bg-black transition-all duration-700 ease-in-out absolute top-[10%] left-[10%] w-4 h-4 p-3 cursor-pointer flex justify-center items-center  rounded-full text-black dark:text-white"
             >
               X
             </button>

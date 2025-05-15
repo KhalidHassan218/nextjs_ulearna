@@ -19,20 +19,18 @@ const ErrorSimulator = ({
   return (
     <button
       title="Simulate an error"
-      className="bg-red-950 text-red-500 rounded p-1 leading-none font-semibold text-sm hover:bg-red-900 transition"
+      className="bg-red-950 text-red-500 cursor-pointer  p-1  font-semibold text-sm hover:bg-red-900 transition"
       onClick={() => setError(true)}
     >
-      Simulate Error
+      Simulate Error (only production environment)
     </button>
   );
 };
 
 export const ErrorWrapper = ({ children }: WrapperProps) => {
   return (
-    <div className="flex mt-[95px] flex-col rounded-lg  relative p-4 border border-gray-300">
-      <div className="absolute top-0 left-4 -translate-y-1/2">
-        <ErrorSimulator message="Simulated error in root layout" />
-      </div>
+    <div className="flex mt-[88px] flex-col   relative">
+      <ErrorSimulator message="Simulated error in root layout" />
       {children}
     </div>
   );

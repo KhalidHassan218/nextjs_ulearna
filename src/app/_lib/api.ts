@@ -5,7 +5,7 @@ export const fetchAllProducts = async (): Promise<Product[]> => {
   const response = await fetch(`${process.env.API_BASE_URL}/products`);
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch products: ${response.status}`);
+    throw new Error(`Failed to fetch All products`);
   }
 
   const products = await response.json();

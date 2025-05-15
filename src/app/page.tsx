@@ -1,28 +1,21 @@
-// app/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="bg-red-600">
       {/* Hero Section */}
       <div className="relative h-screen max-h-[800px] overflow-hidden">
-        {/* Background Image */}
         <Image
-          src="/ecommerce2.jpg" // Replace with your image path
+          src="/ecommerce2.jpg"
           alt="Modern fashion collection"
           fill
-          placeholder="blur"
-           blurDataURL="..."
           className="object-cover"
           priority
           quality={100}
         />
-
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/30" />
 
-        {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Elevate Your Style

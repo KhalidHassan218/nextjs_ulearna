@@ -20,8 +20,8 @@ const ProductCard = ({ product }: { product: Product }) => {
         />
       </div>
       <div className="mt-2">
-        <h3 className="font-medium text-gray-900">{product.title}</h3>
-        <p className="text-gray-700">${product.price.toFixed(2)}</p>
+        <h3 className="font-medium transition-all duration-700 ease-in-out dark:text-white text-gray-900">{product.title}</h3>
+        <p className="text-gray-700 transition-all duration-700 ease-in-out dark:text-white">${product.price.toFixed(2)}</p>
       </div>
     </Link>
   );
