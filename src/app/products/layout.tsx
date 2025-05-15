@@ -9,5 +9,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="pt-24 dark:bg-black text-white transition-all duration-700 ease-in-out">{children}</div>;
+  return <div className="pt-6 dark:bg-black text-white transition-all duration-700 ease-in-out">{children}</div>;
 }

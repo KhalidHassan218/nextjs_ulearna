@@ -16,7 +16,7 @@ export default function DescriptionAccordion({
         className="flex cursor-pointer justify-between items-center w-full text-left"
         aria-expanded={isExpanded}
       >
-        <h3 className="text-sm font-medium text-gray-900">Description</h3>
+        <h3 className="text-sm font-medium dark:text-white text-gray-900">Description</h3>
         <span className="text-gray-500">
           {isExpanded ? (
             <svg

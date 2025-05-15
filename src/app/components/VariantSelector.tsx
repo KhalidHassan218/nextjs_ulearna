@@ -24,10 +24,10 @@ export default function VariantSelector({
             key={option}
             type="button"
             onClick={() => onSelect(option)}
-            className={`px-3 hover:bg-gray-100 dark:hover:text-black cursor-pointer py-1 border rounded-md text-sm ${
+            className={`px-3 hover:bg-gray-100 dark:text-white text-black dark:hover:text-black cursor-pointer py-1 border rounded-md text-sm ${
               selected === option
-                ? "bg-gray-100 border-gray-800 dark:text-black"
-                : "border-gray-300 "
+                ? "bg-gray-100 border-gray-800 dark:!text-black"
+                : "border-gray-300  "
             }`}
           >
             {option}

@@ -35,8 +35,8 @@ export default function ProductInfo({
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold">{product.title}</h1>
-      <p className="text-2xl font-semibold">${product.price.toFixed(2)}</p>
+      <h1 className="text-3xl font-bold dark:text-white text-black">{product.title}</h1>
+      <p className="text-2xl font-semibold dark:text-white text-black">${product.price.toFixed(2)}</p>
 
       <VariantSelector
         label="Color"

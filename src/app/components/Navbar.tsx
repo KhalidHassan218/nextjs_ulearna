@@ -25,12 +25,12 @@ const Navbar = () => {
       <Link href={"/"}>
         <h1>ECOM Test</h1>
       </Link>
-      <div className="flex items-center justify-between" >
+      <div className="flex items-center  gap-2 justify-between">
         <div>
-          <ThemeToggleIcon/>
+          <ThemeToggleIcon />
         </div>
         <button onClick={handleOpenCart} className="relative cursor-pointer ">
-          <div className="absolute w-3 h-3 top-0 right-0 rounded-full text-white bg-red-700 flex items-center p-3 justify-center text-xs">
+          <div className="absolute w-2 h-2 top-0 right-0 rounded-full text-white bg-red-700 flex items-center p-2 justify-center text-xs">
             {cartQuantity}
           </div>
           <CartIcon />
